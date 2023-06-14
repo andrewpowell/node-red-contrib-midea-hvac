@@ -101,8 +101,6 @@ module.exports = function (RED) {
       password = RED.nodes.getNode(nodeId)?.credentials?.password;
     }
 
-    let devices = [];
-
     try {
       // storage
       let userDir = path.join(require('os').homedir(), '.node-red');
